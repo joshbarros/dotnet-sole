@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Scalar.AspNetCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <ProjectReference Include="../../libs/shared/Sole.Shared.csproj" />
+    <ProjectReference Include="../../libs/identity/Sole.Identity.csproj" />
+    <ProjectReference Include="../../libs/orders/Sole.Orders.csproj" />
+    <ProjectReference Include="../../libs/raffles/Sole.Raffles.csproj" />
+    <ProjectReference Include="../../libs/claims/Sole.Claims.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Sole.IntegrationTests" />
+  </ItemGroup>
+</Project>
